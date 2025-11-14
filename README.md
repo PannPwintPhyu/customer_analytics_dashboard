@@ -66,7 +66,7 @@ In Power BI:
 - Sales PY, Profit PY  
 - % Change vs Previous Year  
 
-✔ Added conditional formatting for profit gain/loss and sales segment
+✔ Added conditional formatting for profit gain/loss and sales segment                                                                                             
 ✔ Designed a clean, interactive layout for analysis
 
 ---
