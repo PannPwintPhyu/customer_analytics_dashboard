@@ -51,12 +51,14 @@ You can interact with the live dashboard here:
 ##  Data Preparation & Modeling
 
 In Power Query:
+
 ✔ Remove Columns 
 ✔ First Row as Header
 
 In Power BI:
-✔ Created a **Date Table** to enable time-intelligence  
-✔ Built data model relationships 
+
+✔ Created a **Date Table** to enable time-intelligence                                                                                                              
+✔ Built data model relationships                                                                                                                                  
 ✔ Created DAX measures:
 - Total Sales  
 - Total Profit  
