@@ -164,24 +164,8 @@ Designed for deep customer profiling and segmentation.
 # 🚀 **Skills Demonstrated**
 
 ### **SQL (SSMS)**
-
-* Data cleaning
-* Transformations
-* Joins, grouping, mapping
-* Enriching datasets with business logic
-
 ### **Data Modeling**
-
-* Star Schema
-* Analytical table design
-
 ### **Power BI**
-
-* DAX measures
-* Time intelligence
-* Segmentation logic
-* Visual storytelling
-* Report optimization
 
 ### **Analysis**
 
@@ -222,5 +206,5 @@ Some cities contribute disproportionately → tailor promotions by region.
 
 
 
-Just tell me!
+
 
