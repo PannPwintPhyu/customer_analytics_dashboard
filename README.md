@@ -1,210 +1,87 @@
-#   F&B Customer Analytics Dashboard – SQL + Power BI 
+#  F&B Customer Analytics Dashboard – SQL + Power BI
 
-This project showcases a complete **analytical workflow**, starting from SQL-based data preparation in SSMS and ending with a fully interactive **Power BI dashboard**.
+A complete end-to-end analytics project using **SQL for data preparation** and **Power BI for interactive reporting**.
+It analyzes customer behavior, revenue performance, product contribution, and churn/retention patterns for a fictional F&B business.
 
----
-
-It demonstrates strong capabilities in:
-
-✔ SQL data cleaning & transformation
-✔ Analytical table preparation
-✔ Dimensional modeling for reporting
-✔ Advanced DAX measures
-✔ Customer behavior & segmentation analysis
-✔ Churn & retention insights
-✔ Professional BI dashboard development
+🔗 **Live Power BI Dashboard:**
+[https://app.powerbi.com/view?r=eyJrIjoiMGM3YWIyNTUtMmYyYi00NzhhLWI1NDgtYzIzMTM3NmIxOThlIiwidCI6IjhlZjRhZjJkLTkwY2YtNGIzMS1hMTI4LTNmYWE5M2EzMmJjOCIsImMiOjEwfQ%3D%3D](https://app.powerbi.com/view?r=eyJrIjoiMGM3YWIyNTUtMmYyYi00NzhhLWI1NDgtYzIzMTM3NmIxOThlIiwidCI6IjhlZjRhZjJkLTkwY2YtNGIzMS1hMTI4LTNmYWE5M2EzMmJjOCIsImMiOjEwfQ%3D%3D)
 
 ---
 
-#  **Project Overview**
+##  Data Preparation (SQL in SSMS)
 
-This solution analyzes a fictional Food & Beverage (F&B) business and provides insights into:
+Raw transactional data (sales, customers, menu items, feedback, stores) was cleaned and transformed using SQL.
 
-* Revenue trends
-* Customer purchasing behavior
-* Channel and payment performance
-* Product contribution
-* Customer segmentation
-* Churn vs retention
-* Visit frequency patterns
+**Key steps:**
 
-The project follows a simple but effective workflow:
+* Joining transactions with feedback
+* Revenue & discount calculations
+* Customer age-band and demographic enrichment
+* Menu category grouping
+* Store attribute standardization
+* Sentiment & NPS classification
 
-1. **Data Cleaning & Preparation** (SQL in SSMS)
-2. **Analytical Model Creation** (Facts & Dimensions)
-3. **Power BI Data Modeling & DAX**
-4. **Dashboard Design & Business Insights**
+Outputs clean analytical datasets for BI modeling.
 
 ---
 
-#  **Data Preparation (SQL in SSMS)**
+##  Analytical Data Model (Power BI)
 
-Raw tables from transactional systems (sales, customers, menu items, stores, feedback) were cleaned and enriched using SQL.
+A star-schema model with:
 
-### Key transformations included:
+* **Central fact table**: sales + feedback
+* **Dimensions**: customer, product, store, competitor pricing
 
-✔ Joining transaction + feedback data into a combined analytical fact
-✔ Calculating revenue, discounts, and promotion flags
-✔ Creating customer demographics (age bands, gender normalization)
-✔ Categorizing menu items into business-friendly groups
-✔ Standardizing store attributes
-✔ Creating sentiment and NPS categories
-✔ Extracting behavioral metrics (weekday/weekend patterns)
-
-The output results in **clean analytical tables** ready for BI modeling.
+Includes DAX measures for revenue, AOV, recency, frequency, churn, etc.
 
 ---
 
-#  **Analytical Data Model (Power BI Model)**
+##  Power BI Dashboards
 
-The final model follows a **star-schema layout**:
+### 1️. Overview
 
-###  Central Analytical Table
+Revenue, customers, AOV, top items, city/channel performance, trend analysis.
 
-* Combined sales + feedback dataset (transaction-level)
+### 2️. Customer Segmentation
 
-###  Supporting Dimensions
+Frequency vs monetary, age groups, recency, segment revenue contribution.
 
-* Customer attributes
-* Menu/product details
-* Store information
-* Competitor pricing
+### 3️. Churn & Retention
 
----
+Churn breakdown, return gap buckets, repeat vs new customer trends.
 
-#  **Power BI Dashboards**
+### 4️. Customer Explorer
 
-The report contains **4 fully interactive pages**, each built for both business and technical stakeholders.
+Customer-level insights: total orders, AOV, recency, demographics, last purchase.
 
 ---
 
-##  **1. Overview Dashboard**
+## ❓ Business Questions Answered
 
-Key metrics:
-
-* Total revenue
-* Customer count
-* Average order value
-* Top-selling items
-* Revenue by city, channel, payment method
-* Monthly & weekly revenue patterns
+* Who are our top customers?
+* Which items and channels drive revenue?
+* Which customers are at risk of churn?
+* How frequently do customers return?
+* What demographic groups contribute most?
 
 ---
 
-##  **2. Customer Segmentation Dashboard**
+## 🚀 Skills Demonstrated
 
-Focuses on understanding customer behavior:
-
-* Frequency vs Monetary scatterplot
-* Age group & segment comparison
-* Recency behavior
-* Revenue contribution by customer groups
-* Channel usage across segments
-
-This helps identify Champions, Loyal, Occasional, and At-Risk customers (RFM-inspired classification).
+* **SQL (SSMS):** data cleaning, transformation, enrichment
+* **Power BI:** modeling, DAX, storytelling, interactivity
+* **Analytics:** customer segmentation, product analysis, churn insights
 
 ---
 
-## 🟩 **3. Churn & Retention Dashboard**
+## 📌 Key Insights
 
-Analyzes customer lifecycle:
-
-* Churned customer breakdown
-* Return-gap categories 
-* Repeat vs new customer trends
-* Average repurchase days
-
-Reveals patterns in customer loyalty and reactivation opportunities.
+* Early lifecycle customers churn quickly → need onboarding campaigns
+* Champions & Loyal segments drive most revenue
+* At-Risk customers represent strong reactivation opportunities
+* Top items dominate sales → require inventory prioritization
+* City performance varies → targeted marketing recommended
 
 ---
-
-##  **4. Customer Info Explorer**
-
-A detailed customer-level analytics page:
-
-* Total orders
-* AOV
-* Recency
-* Repurchase frequency
-* Demographics
-* Last purchase date
-
-Designed for deep customer profiling and segmentation.
-
----
-
-# ❓ **Business Questions Answered**
-
-### Customer Insights
-
-* Who are our most valuable customers?
-* Which customers need reactivation?
-* How often do customers return?
-
-### Product Insights
-
-* Which items generate the most revenue?
-* What product groups perform best by region?
-* How do promotions impact sales?
-
-### Performance Trends
-
-* Which days drive the most revenue?
-* Which cities or stores lead performance?
-* How do payment methods influence spend?
-
-### Churn & Retention
-
-* How quickly do customers return?
-* Which segments show the highest churn?
-* What factors impact customer loyalty?
-
----
-
-# 🚀 **Skills Demonstrated**
-
-### **SQL (SSMS)**
-### **Data Modeling**
-### **Power BI**
-
-### **Analysis**
-
-* Customer behavior analytics
-* Product contribution analysis
-* RFM-inspired segmentation
-* Churn/retention modeling
-
----
-
-# 📌 **Key Insights & Business Recommendations**
-
-###  1. Increase Retention Early in Customer Lifecycle
-
-Most customers churn early → targeted onboarding can improve retention.
-
-###  2. Invest in Top Customer Segments
-
-Champions & Loyal customers contribute the majority of revenue → offer loyalty perks.
-
-###  3. Reactivate At-Risk Customers
-
-Large revenue leakage risk → send personalized offers or reminders.
-
-###  4. Optimize Product Inventory
-
-Top-performing items dominate → ensure consistent stock and promotions.
-
-###  5. Enhance Cross-Selling Initiatives
-
-Many customers have low monetary values → promote bundles and add-ons.
-
-###  6. Improve City-Based Targeting
-
-Some cities contribute disproportionately → tailor promotions by region.
-
----
-
-
-
 
 
