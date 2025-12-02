@@ -1,126 +1,226 @@
-# Superstore Analytics Dashboard (Power BI)
+#  **F&B Customer Analytics Dashboard – SQL + Power BI **
 
-🚀 Welcome to the **Superstore Analytics Project** repository.
-
-This project is an interactive Dashboard built in **Power BI**, using the public Kaggle Superstore dataset.  
-The dashboard answers key business questions around **sales performance**, **profitability**, **returns**, and **customer segmentation**.
-
-You can interact with the live dashboard here:  
- **https://app.powerbi.com/view?r=eyJrIjoiZjIyNzljNjMtZWQwNy00NjE4LWFiZTMtN2NhOTA1M2M2ODA2IiwidCI6IjIyODhlZGEwLWZiMTQtNDVlZS05OTY2LWE4ZGIwNDY2YzUzOSIsImMiOjEwfQ%3D%3D&pageName=fd0c27f131064400c6b0**
+This project showcases a complete **analytical workflow**, starting from SQL-based data preparation in SSMS and ending with a fully interactive **Power BI dashboard**.
 
 ---
 
-##  Dashboard Preview
+It demonstrates strong capabilities in:
 
-![Dashboard Preview](https://github.com/user-attachments/assets/b47446aa-7a65-4d88-91a7-adf998d15dee)
-
-
----
-
-##  Business Questions Answered
-
-1. **Key Metrics:**  
-   Sales, Profit, % Returned Orders, and **% change vs Previous Year (PY)**
-
-2. **Sales vs Previous Year Over Time:**  
-   Month-over-month sales performance compared to PY trends
-
-3. **Most Profitable vs Loss-Making Products:**  
-   Identify products generating the highest profit and products losing money
-
-4. **Profit by Location (State):**  
-   Which states are driving the most profit?
-
-5. **Sales by Segment:**  
-   Performance of Consumer, Corporate, and Home Office segments
+✔ SQL data cleaning & transformation
+✔ Analytical table preparation
+✔ Dimensional modeling for reporting
+✔ Advanced DAX measures
+✔ Customer behavior & segmentation analysis
+✔ Churn & retention insights
+✔ Professional BI dashboard development
 
 ---
 
-##  Dataset Information
+#  **Project Overview**
 
-- **Source:** Kaggle – Superstore Dataset  
-- **Dataset Link:** https://www.kaggle.com/datasets/bitricks/superstore-dataset
-- **Key fields used:**
-  - `Order Date`
-  - `Sales`, `Profit`
-  - `Customer Segment`
-  - `State`
+This solution analyzes a fictional Food & Beverage (F&B) business and provides insights into:
 
----
+* Revenue trends
+* Customer purchasing behavior
+* Channel and payment performance
+* Product contribution
+* Customer segmentation
+* Churn vs retention
+* Visit frequency patterns
 
-##  Data Preparation & Modeling
+The project follows a simple but effective workflow:
 
-In Power Query:
-
-✔ Remove Columns                                                                                                                                                       
-✔ First Row as Header
-
-In Power BI:
-
-✔ Created a **Date Table** to enable time-intelligence                                                                                                              
-✔ Built data model relationships                                                                                                                                  
-✔ Created DAX measures:
-- Total Sales  
-- Total Profit  
-- % of Returned Orders  
-- Sales PY, Profit PY  
-- % Change vs Previous Year  
-
-✔ Added conditional formatting for profit gain/loss and sales segment                                                                                             
-✔ Designed a clean, interactive layout for analysis
+1. **Data Cleaning & Preparation** (SQL in SSMS)
+2. **Analytical Model Creation** (Facts & Dimensions)
+3. **Power BI Data Modeling & DAX**
+4. **Dashboard Design & Business Insights**
 
 ---
 
-##  Dashboard Components
+#  **Data Preparation (SQL in SSMS)**
 
-### **1. KPI Cards**
-- Total Sales  
-- Total Profit  
-- % Returned Orders  
-- Previous Year values  
-- Growth % vs PY  
+Raw tables from transactional systems (sales, customers, menu items, stores, feedback) were cleaned and enriched using SQL.
 
-### **2. Sales vs Previous Year Trend**
-Line chart comparing:
-- Current year sales  
-- Previous year sales  
+### Key transformations included:
 
-### **3. Profit by Product**
-Identifies:
-- Top profit-generating products  
-- Loss-making products (negative profit)
+✔ Joining transaction + feedback data into a combined analytical fact
+✔ Calculating revenue, discounts, and promotion flags
+✔ Creating customer demographics (age bands, gender normalization)
+✔ Categorizing menu items into business-friendly groups
+✔ Standardizing store attributes
+✔ Creating sentiment and NPS categories
+✔ Extracting behavioral metrics (weekday/weekend patterns)
 
-### **4. Profit by State (Map)**
-Shows geographical contribution of profit across the US.
-
-### **5. Sales by Segment**
-Donut chart showing distribution across:
-- Consumer  
-- Corporate  
-- Home Office  
+The output results in **clean analytical tables** ready for BI modeling.
 
 ---
 
-##  Key Insights (From Dashboard)
+#  **Analytical Data Model (Power BI Model)**
 
-- Total **Sales:** $2.3M  
-- Total **Profit:** $292.3K  
-- **Sales grew 47%** vs previous year  
-- **Profit grew 48%** vs previous year  
-- Return rate: **5.79%**, improved from last year  
-- Technology accessories and copiers are highly profitable  
-- Tables (Furniture) show significant losses  
-- California and New York drive the highest profits  
-- Consumer segment contributes ~50% of total sales  
+The final model follows a **star-schema layout**:
+
+###  Central Analytical Table
+
+* Combined sales + feedback dataset (transaction-level)
+
+###  Supporting Dimensions
+
+* Customer attributes
+* Menu/product details
+* Store information
+* Competitor pricing
+
+---
+
+#  **Power BI Dashboards**
+
+The report contains **4 fully interactive pages**, each built for both business and technical stakeholders.
 
 ---
 
-##  Tools Used
+##  **1. Overview Dashboard**
 
-- **Power BI** (main tool)
-- **DAX** for time intelligence & measures
-- **Excel** (data source)
-- **Kaggle** dataset
+Key metrics:
+
+* Total revenue
+* Customer count
+* Average order value
+* Top-selling items
+* Revenue by city, channel, payment method
+* Monthly & weekly revenue patterns
 
 ---
+
+##  **2. Customer Segmentation Dashboard**
+
+Focuses on understanding customer behavior:
+
+* Frequency vs Monetary scatterplot
+* Age group & segment comparison
+* Recency behavior
+* Revenue contribution by customer groups
+* Channel usage across segments
+
+This helps identify Champions, Loyal, Occasional, and At-Risk customers (RFM-inspired classification).
+
+---
+
+## 🟩 **3. Churn & Retention Dashboard**
+
+Analyzes customer lifecycle:
+
+* Churned customer breakdown
+* Return-gap categories 
+* Repeat vs new customer trends
+* Average repurchase days
+
+Reveals patterns in customer loyalty and reactivation opportunities.
+
+---
+
+##  **4. Customer Info Explorer**
+
+A detailed customer-level analytics page:
+
+* Total orders
+* AOV
+* Recency
+* Repurchase frequency
+* Demographics
+* Last purchase date
+
+Designed for deep customer profiling and segmentation.
+
+---
+
+# ❓ **Business Questions Answered**
+
+### Customer Insights
+
+* Who are our most valuable customers?
+* Which customers need reactivation?
+* How often do customers return?
+
+### Product Insights
+
+* Which items generate the most revenue?
+* What product groups perform best by region?
+* How do promotions impact sales?
+
+### Performance Trends
+
+* Which days drive the most revenue?
+* Which cities or stores lead performance?
+* How do payment methods influence spend?
+
+### Churn & Retention
+
+* How quickly do customers return?
+* Which segments show the highest churn?
+* What factors impact customer loyalty?
+
+---
+
+# 🚀 **Skills Demonstrated**
+
+### **SQL (SSMS)**
+
+* Data cleaning
+* Transformations
+* Joins, grouping, mapping
+* Enriching datasets with business logic
+
+### **Data Modeling**
+
+* Star Schema
+* Analytical table design
+
+### **Power BI**
+
+* DAX measures
+* Time intelligence
+* Segmentation logic
+* Visual storytelling
+* Report optimization
+
+### **Analysis**
+
+* Customer behavior analytics
+* Product contribution analysis
+* RFM-inspired segmentation
+* Churn/retention modeling
+
+---
+
+# 📌 **Key Insights & Business Recommendations**
+
+###  1. Increase Retention Early in Customer Lifecycle
+
+Most customers churn early → targeted onboarding can improve retention.
+
+###  2. Invest in Top Customer Segments
+
+Champions & Loyal customers contribute the majority of revenue → offer loyalty perks.
+
+###  3. Reactivate At-Risk Customers
+
+Large revenue leakage risk → send personalized offers or reminders.
+
+###  4. Optimize Product Inventory
+
+Top-performing items dominate → ensure consistent stock and promotions.
+
+###  5. Enhance Cross-Selling Initiatives
+
+Many customers have low monetary values → promote bundles and add-ons.
+
+###  6. Improve City-Based Targeting
+
+Some cities contribute disproportionately → tailor promotions by region.
+
+---
+
+
+
+Just tell me!
 
