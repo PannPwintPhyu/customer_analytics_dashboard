@@ -1,4 +1,4 @@
-#  **F&B Customer Analytics Dashboard – SQL + Power BI **
+#   F&B Customer Analytics Dashboard – SQL + Power BI 
 
 This project showcases a complete **analytical workflow**, starting from SQL-based data preparation in SSMS and ending with a fully interactive **Power BI dashboard**.
 
