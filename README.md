@@ -7,7 +7,12 @@ It analyzes customer behavior, revenue performance, product contribution, and ch
 [https://app.powerbi.com/view?r=eyJrIjoiMGM3YWIyNTUtMmYyYi00NzhhLWI1NDgtYzIzMTM3NmIxOThlIiwidCI6IjhlZjRhZjJkLTkwY2YtNGIzMS1hMTI4LTNmYWE5M2EzMmJjOCIsImMiOjEwfQ%3D%3D](https://app.powerbi.com/view?r=eyJrIjoiMGM3YWIyNTUtMmYyYi00NzhhLWI1NDgtYzIzMTM3NmIxOThlIiwidCI6IjhlZjRhZjJkLTkwY2YtNGIzMS1hMTI4LTNmYWE5M2EzMmJjOCIsImMiOjEwfQ%3D%3D)
 
 ---
+Dashboard Preview
 
+Below is a visual overview of the full Power BI report (4 pages):
+
+<table> <tr> <td align="center"> <img src="https://github.com/PannPwintPhyu/customer_analytics_dashboard/blob/main/assets/01_Overview.png" width="400"/> <br><b>1. Overview Dashboard</b> </td> <td align="center"> <img src="https://github.com/PannPwintPhyu/customer_analytics_dashboard/blob/main/assets/02_Cus_Segmentation.png" width="400"/> <br><b>2. Customer Segmentation</b> </td> </tr> <tr> <td align="center"> <img src="https://github.com/PannPwintPhyu/customer_analytics_dashboard/blob/main/assets/03_Retention%20vs%20Churn.png" width="400"/> <br><b>3. Retention vs Churn</b> </td> <td align="center"> <img src="https://github.com/PannPwintPhyu/customer_analytics_dashboard/blob/main/assets/04_Cus_info.png" width="400"/> <br><b>4. Customer Explorer</b> </td> </tr> </table>
+---
 ##  Data Preparation (SQL in SSMS)
 
 Raw transactional data (sales, customers, menu items, feedback, stores) was cleaned and transformed using SQL.
